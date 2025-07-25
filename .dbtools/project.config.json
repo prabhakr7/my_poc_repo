@@ -3,12 +3,10 @@
   "sqlcl" : {
     "connectionName" : "",
     "version" : "25.2.1.0",
-    "startup": [
-		    "ALTER SESSION DISABLE PARALLEL DML"
-		]
+    "startup" : [ "ALTER SESSION DISABLE PARALLEL DML" ]
   },
   "schemas" : [ "PRLNU" ],
-  "lastReleaseVersion" : "",
+  "lastReleaseVersion" : "1.0.0-1",
   "export" : {
     "format" : {
       "enable" : true
