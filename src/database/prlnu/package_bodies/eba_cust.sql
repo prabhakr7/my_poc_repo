@@ -28,6 +28,7 @@ create or replace package body eba_cust as
         l_access_level_id eba_cust_users.access_level_id%type := 0;  -- default to lowest privilege.
         l_account_locked  eba_cust_users.account_locked%type;
     begin
+        dbms_output.put_line('hi! welcome');
         -- If access control is disabled, default to highest privilege
         if eba_cust_fw.get_preference_value('ACCESS_CONTROL_ENABLED') = 'N' then
             return 3;
@@ -182,4 +183,4 @@ end eba_cust;
 /
 
 
--- sqlcl_snapshot {"hash":"ef8150558aae52ae9128210931ab117f62641a79","type":"PACKAGE_BODY","name":"EBA_CUST","schemaName":"PRLNU","sxml":""}
+-- sqlcl_snapshot {"hash":"4fc69a5bd913a4665e743f4b3bdab446e367c03d","type":"PACKAGE_BODY","name":"EBA_CUST","schemaName":"PRLNU","sxml":""}
