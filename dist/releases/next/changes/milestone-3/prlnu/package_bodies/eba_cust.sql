@@ -1,3 +1,7 @@
+-- liquibase formatted sql
+-- changeset PRLNU:1753776080400 stripComments:false  logicalFilePath:milestone-3/prlnu/package_bodies/eba_cust.sql runAlways:false runOnChange:false replaceIfExists:true failOnError:true
+-- sqlcl_snapshot src/database/prlnu/package_bodies/eba_cust.sql:ef8150558aae52ae9128210931ab117f62641a79:4fc69a5bd913a4665e743f4b3bdab446e367c03d:alter
+
 create or replace package body eba_cust as
    
     -------------------------------------------------------------------------
@@ -182,5 +186,3 @@ create or replace package body eba_cust as
 end eba_cust;
 /
 
-
--- sqlcl_snapshot {"hash":"4fc69a5bd913a4665e743f4b3bdab446e367c03d","type":"PACKAGE_BODY","name":"EBA_CUST","schemaName":"PRLNU","sxml":""}
